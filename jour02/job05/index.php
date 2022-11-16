@@ -13,6 +13,53 @@ Faire un algorithme qui affiche les nombres premiers jusqu’à 1000 en mettant 
  </head>
  <body>
  <?php
+   $nm_premier = [];
+   $n = null;
+   for ($i=2 ; $i < 100; $i++) {
+      echo "pour le nombre $i<br>";
+         for ($j=2 ; $j < 100; $j++) {
+         if ($i % $j == 0) {
+            echo 'c\'est pas un nombre premier<br>';
+            break;
+         } elseif ($i == $j) {
+            break;
+         }
+          else {
+            // echo "$i est un nombre premier<br>";
+            $n = $i;
+            $nm_premier[] = $n;
+
+         } 
+
+      }
+      print_r($nm_premier);
+   }
+
+
+
+
+      // for ()
+      //       for ($i = 2; $i < 100; $i++)
+      //       {
+      //           if($num % $i == 0)
+      //               return false;
+      //       }
+      //       return true;
+         
+
+
+      //    for($i = $input; $i > 0; $i--)
+      //    {
+      //       if(Prime($i))
+      //           echo $i;
+         
+      //       if(Prime($i))
+      //           exit();
+      //    }
+
+
+
+
 
  ?>
  </body>
