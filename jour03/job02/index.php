@@ -1,6 +1,10 @@
 <!-- 
     ***     Mohamed HABBAAINA, le 16 nov 2022       ***
 
+Créez une variable de type string nommée $str et affectez y le texte :
+“Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.”
+Parcourir cette chaîne en affichant seulement un caractère sur deux.
+Ex. : Tu e ntnssrn edsdn etmscmelslre osl li.
  -->
   <!DOCTYPE html>
  <html lang="fr">
@@ -12,7 +16,19 @@
  </head>
  <body>
  <?php
+$str = 'Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.';
+$long = strlen($str);
+for ($i =0; $i < $long; $i++) {
+   if ($i % 2 == 0) {
+      echo $str[$i];
+   }
+}
 
+// foreach ($str as $clef => $letr) {
+//    if ($clef %2 ==0) {
+//       echo $letr;
+//    }
+// }
 ?>
 </body>
 </html>
