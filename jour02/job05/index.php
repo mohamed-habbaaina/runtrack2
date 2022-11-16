@@ -4,7 +4,7 @@ Faire un algorithme qui affiche les nombres premiers jusqu’à 1000 en mettant 
 à la ligne entre chaque nombre (“<br />”).
  -->
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="fr">
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
