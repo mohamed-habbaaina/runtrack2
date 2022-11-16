@@ -52,6 +52,12 @@ for ($i = 0; $i < $long; $i++) {
    elseif ($str[$i] == 'U') {
       echo "$str[$i]";
    }
+   elseif ($str[$i] == 'o') {
+      $voyelles[] = $str[$i];
+   }
+   elseif ($str[$i] == 'O') {
+         $voyelles[] = $str[$i];
+   }
    elseif ($str[$i] == 'y') {
       echo "$str[$i]";
    }

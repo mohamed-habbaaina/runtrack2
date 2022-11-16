@@ -29,13 +29,13 @@ for ($i = 0; $i < $long; $i++) {
    if ($str[$i] == " ") {           // Pour enlevé (vergules, espace,,,etc). 
       $j = $j +1;
    }
-   if ($str[$i] == ".") {
+   elseif ($str[$i] == ".") {
       $j = $j +1;
    }
-   if ($str[$i] == ",") {
+   elseif ($str[$i] == ",") {
       $j = $j +1;
    }
-   if ($str[$i] == "\'") {
+   elseif ($str[$i] == "\'") {
       $j = $j +1;
    }
 }
