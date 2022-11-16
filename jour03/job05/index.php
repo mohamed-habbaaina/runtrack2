@@ -97,20 +97,30 @@ for ($i = 0; $i < $long; $i++) {
       </tr>
    </thead>
    <tbody>
-      <td>
-      <?php
-         foreach($voyelles as $voyelle){
-            echo $voyelle . ' ';
-         }
-      ?>
-      </td>
-      <td>
-      <?php
-         foreach($consonnes as $consonne){
-            echo $consonne . ' ';
-         }
-      ?>
-      </td>
+      <tr>
+         <td>
+         <?php
+         $m = 0;
+            foreach($voyelles as $voyelle){
+               $m = $m +1;                      // Pour compté le nombre du voyelles.
+               echo $voyelle . ' ';
+            }
+         ?>
+         </td>
+         <td>
+         <?php
+            $n =0;
+            foreach($consonnes as $consonne){
+               $n =$n +1;                       //  Pour compté le nombre du consonnes.
+               echo $consonne . ' ';
+            }
+         ?>
+         </td>
+      </tr>
+      <tr>
+         <td><?php  echo $m; ?></td>
+         <td><?php  echo $n; ?></td>
+      </tr>
    </tbody>
 </table>
 </body>
