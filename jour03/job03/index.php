@@ -26,12 +26,40 @@ $i=0;
 while (isset($str[$i]) == true) {   // Pour calculé la langueure de la chaine du caractere.
    $long = $long + 1;
    $i = $i +1;
-}  echo $long;
-for ($i =0; $i < $long; $i++) {
-   if ($str[$long] == 'a') {
-      echo $str[$long];
+}
+for ($i = 0; $i < $long; $i++) {
+   if ($str[$i] == 'a') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'e') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'i') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'u') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'A') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'E') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'I') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'U') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'y') {
+      echo "$str[$i]";
+   }
+   elseif ($str[$i] == 'Y') {
+      echo "$str[$i]";
    }
 }
+
 ?>
 </body>
 </html>
