@@ -14,7 +14,6 @@ Vous pouvez ensuite afficher avec echo directement dans votre page par exemple :
                               // Pour calculé la langueure de la chaine du caractere.
    foreach ($_GET as $var){
       $long = $long + 1;
-      // $i = $i +1;
    }
    echo"Le nombre du paramètre dans le formulaire est:  $long <br>";
  ?>
@@ -27,22 +26,17 @@ Vous pouvez ensuite afficher avec echo directement dans votre page par exemple :
     <title>Document</title>
  </head>
  <body>                    <!-- Le formulaire -->
-<form method="GET">              
-   <p>
+<form method="GET" style="display: flex; flex-direction : column; width: 200px; margin: 30px; border : 2px dashed black; padding: 10px">              
       <label for="name">Prénom :</label>
       <input type="text" name="name" id="name">
-   </p>
-   <p>
+
       <label for="age">Age :</label>
       <input type="number" name="age" id="age">
-   </p>
-   <p>
+
       <label for="email">Email :</label>
       <input type="email" name="email" id="email">
-   </p>
-   <p>
-      <input type="submit" value="Envoyer">
-   </p>
+
+      <input type="submit" value="Envoyer"/>
 </form>
 </body>
 </html>
