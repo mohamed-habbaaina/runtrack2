@@ -51,12 +51,11 @@ tableau :
    <tbody>
    <?php 
 
-   foreach ($_GET as $cles => $val){?>
+   foreach ($_GET as $cles => $val){
 
 
-      <tr><td>$cles</td><br>
-      <td>$val</td></tr>
-   <?php 
+      echo "<tr><td>$cles</td><br>
+      <td>$val</td></tr>";
    }
    ?>
    </tbody>
