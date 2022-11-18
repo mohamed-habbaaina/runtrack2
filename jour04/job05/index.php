@@ -10,12 +10,10 @@ Après validation du formulaire :
  -->
  <?php
 print_r($_POST);
-// for ($i = 0 ; $i < 2 ; $i++){
    if ($_POST['username'] == 'John' && $_POST['password'] == 'Rambo'){
       echo 'C\’est pas ma guerre';
    } else {
       echo 'Votre pire cauchemar';
-   // }
 }
 ?>
 
