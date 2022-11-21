@@ -8,6 +8,16 @@ une maison telle que :
 Si on entre les valeurs : largeur =10 et hauteur = 5 dans les champs, la
 maison qui s’affiche sur la page doit ressembler à ceci :
  -->
+
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
  <pre><?php
 //  $t_0 =[];
 //  $t_1 =[];
@@ -32,7 +42,8 @@ $l = $_POST['largeur'];
 $h = $_POST['hauteur'];
 for ($tr = 0; $tr<(($l/2)+1); $tr++){      // La partie gauche du triangle.
    echo '_';   
-} echo '/'.'<br>';
+} 
+echo '/'.'<br>';
 for ($n =0; $n<$l; $n++){              // La partie droite du triangle.
    echo '_'.'_';
 } echo '\\'.'<br>';
@@ -49,19 +60,7 @@ for ($i =$h; $i<(2*$h); $i++){         // Le carré
    echo '<br>';
 
 }
-
-
-
 ?></pre>
-  <!DOCTYPE html>
- <html lang="fr">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
 <form method="POST" style="display: flex; flex-direction : column; width: 200px; margin: 30px; border : 2px dashed black; padding: 10px">              
       <label for="largeur">Largeur :</label>
       <input type="text" name="largeur" id="largeur">

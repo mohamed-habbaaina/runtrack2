@@ -8,7 +8,7 @@ Après validation du formulaire :
 ● si c’est un nombre impair, afficher “Nombre impair”.
  -->
  <?php
-if ($_POST['nombre'] % 2 == 0){
+if ($_POST['nombre'] % 2 == 0){     // Verification de reste de la division sur deux
    echo 'Nombre pair';
 } else{
    echo 'Nombre impair';
