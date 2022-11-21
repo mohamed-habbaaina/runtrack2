@@ -13,15 +13,12 @@ doit changer.
  switch ($style){
     case $style == 'style1':
         $style = 'style1.css';
-        echo 'style1';
         break;
     case $style == 'style2':
         $style = 'style2.css';
-        echo 'style2';
         break;
     case $style == 'style3':
          $style = 'style3.css';
-         echo 'style3';
          break;
  }
 }
@@ -37,7 +34,7 @@ doit changer.
     <title>Document</title>
  </head>
  <body>                    <!-- Le formulaire select option style-->
-<form method="get" style="display: flex; flex-direction : column; width: 200px; margin: 30px; border : 2px dashed black; padding: 10px">              
+<form method="get">              
       
         <select name="style" id="style">
             <option value="style1">style1</option>
