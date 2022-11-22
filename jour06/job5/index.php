@@ -20,6 +20,8 @@ doit changer.
     case $style == 'style3':
          $style = 'style3.css';
          break;
+    default:
+    break;
  }
 }
  
