@@ -1,6 +1,10 @@
 <!-- 
 Mohamed HABBAAINA, le 22 nov 2022
 
+Créez une fonction nommée “bonjour($jour)”.
+Cette fonction prend en paramètre un booléen nommé “$jour”.
+● Si le paramètre “$jour” vaut true, la fonction doit afficher : “Bonjour”,
+● Si le paramètre “$jour” vaut false, la fonction doit afficher : “Bonsoir”.
  -->
  <!DOCTYPE html>
  <html lang="fr">
@@ -12,7 +16,15 @@ Mohamed HABBAAINA, le 22 nov 2022
  </head>
  <body>
  <?php
-    
- ?>
+    function bonjour($jour){
+      if ($jour == true){
+         echo 'Bonjour';
+      }
+      if ($jour == false){
+         echo 'Bonsoir';
+      }
+    }
+    bonjour(true);
+    ?>
  </body>
  </html>
