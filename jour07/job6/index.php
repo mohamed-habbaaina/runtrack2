@@ -24,7 +24,37 @@ Cela est valable que l’on crie ou non (majuscules et minuscules).
  </head>
  <body>
  <?php
-    
- ?>
+    function leetSpeak($str){
+      $i =0;
+      while(isset($str[$i])){
+         if ($str[$i] == 'A'|| $str[$i] == 'a'){   // Remplacer le 'a' par 4.
+            $str[$i] = 4;
+         }
+         if ($str[$i] == 'B'|| $str[$i] == 'b'){   // // Remplacer le 'a' par 8.
+            $str[$i] = 8;
+         }
+         if ($str[$i] == 'E'|| $str[$i] == 'e'){
+            $str[$i] = 3;
+         }
+         if ($str[$i] == 'G'|| $str[$i] == 'g'){
+            $str[$i] = 6;
+         }
+         if ($str[$i] == 'L'|| $str[$i] == 'l'){
+            $str[$i] = 1;
+         }
+         if ($str[$i] == 'S'|| $str[$i] == 's'){
+            $str[$i] = 5;
+         }
+         if ($str[$i] == 'T'|| $str[$i] == 't'){
+            $str[$i] = 7;
+         }
+         $i++;
+      }
+      return $str;
+    }
+    $str ='Mieux vaut mourir incompris que passer sa vie à s\'expliquer';
+    $x = leetSpeak($str);
+    echo $x;
+    ?>
  </body>
  </html>
