@@ -1,6 +1,8 @@
 <!-- 
 Mohamed HABBAAINA, le 22 nov 2022
 
+Créez une fonction nommée “hello()”. Cette fonction, une fois appelée, doit afficher sur
+la page : “Hello LaPlateforme!”.
  -->
  <!DOCTYPE html>
  <html lang="fr">
@@ -12,7 +14,10 @@ Mohamed HABBAAINA, le 22 nov 2022
  </head>
  <body>
  <?php
-    
+    function hello(){
+        echo 'Hello LaPlateforme!';
+    }
+    hello();
  ?>
  </body>
  </html>
