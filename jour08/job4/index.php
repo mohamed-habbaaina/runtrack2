@@ -10,12 +10,13 @@ nouveau afficher le formulaire de connexion.
  -->
 <?php
 session_start();
+// if (isset($_SESSION['prenom'])){
 $_SESSION['prenom'] = $_GET['prenom'];
 $prenom = $_GET['prenom'];
-
-// if (isset($_GET['reset'])){
-//     $_SESSION['prenom'] = null;
 // }
+if (isset($_GET['reset'])){
+    $_SESSION['prenom'] = null;
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -28,11 +29,21 @@ $prenom = $_GET['prenom'];
 <body>
 <?php
 // if (isset($_GET['deconnexion'])){
-//     $_COOKIE['prenom'] = null;
+    // $_COOKIE['prenom'] = null;
 // }
-if ($_COOKIE['prenom'] == $_GET['prenom']){
+if (isset($_COOKIE['prenom'])){
+    if ($_COOKIE['prenom'] == $_GET['prenom']){
     echo "Bonjour $prenom";
-}
+} elseif (isset($_GET['deconnexion'])) { ?>
+
+    <label for="prenom" >prénom</label>
+    <input type="text" name="prenom" id="prenom">
+
+    <button type="submit" name="connexion">Connexion</button>
+
+
+<?php
+} 
 else { 
 ?>
 <form action="" method="get">
@@ -42,7 +53,7 @@ else {
     <button type="submit" name="connexion">Connexion</button>
 
 </form>
-<?php   }
+<?php   }}
 ?>
     <button type="submit" name="deconnexion">Déconnexion</button>
 <?php
