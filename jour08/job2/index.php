@@ -7,7 +7,6 @@ Ajoutez un bouton nommé “reset” qui permet de réinitialiser ce compteur.
  -->
 <?php
 session_start();
-setcookie('nbvisites', 'valeur', time()+60*60);
 
 if (isset($_SESSION["newsession"])){        //  Pour verifier la connection.
     $_SESSION["newsession"]++;              //  compteur du nombre de connection.
@@ -20,7 +19,7 @@ if (isset($_SESSION["newsession"])){        //  Pour verifier la connection.
 if (isset($_GET["reset"])){                 //  Si le button "reset" est renvoyer dans la variable "$_GET"
     $_SESSION["newsession"] = 0;            //  donner la valeur "0" au compteur.
 }
-  
+$nb_connextion = $_SESSION["newsession"];
     
 
 // echo $_SESSION["newsession"];
@@ -41,6 +40,9 @@ if (isset($_GET["reset"])){                 //  Si le button "reset" est renvoye
 <form action="" method="get">
     <label for="connection" name="connection"><?php echo 'Nombre de visite: ' . $_SESSION["newsession"]; ?></label>
     <button type="submit" name="reset">reset</button>
-</form>    
+</form>
+<?php
+setcookie('nbvisites', "$nb_connextion", time()+60*60);
+?>
 </body>
 </html>

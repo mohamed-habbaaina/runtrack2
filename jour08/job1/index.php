@@ -25,7 +25,7 @@ if (isset($_GET["reset"])){                 //  Si le button "reset" est renvoye
 </head>
 <body>
 <form action="" method="get">
-    <label for="connection" name="connection"><?php echo 'Nombre de connection : ' . $_SESSION["newsession"]?></label>
+    <label for="connection" name="connection"><?php echo 'Nombre de connexion : ' . $_SESSION["newsession"]?></label>
     <button type="submit" name="reset">reset</button>
 </form>    
 </body>
