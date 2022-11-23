@@ -27,25 +27,26 @@ function gras($str){
       }
    }
 }
-// $str = 'Marseille';
+// $str = 'Marseille';                          // Pour le test
 // $x = gras($str);
 // echo $x;
 
 function cesar($str, $decalage){
    $alphab = 'abcdefghijklmnopqrstuvwxyz';         // Creation d'un tableux de l'alphabet
-   for ($i=0; isset($str) ; $i++) {                // La premiere boucle pour lire la vaiable $str.
+   $var = $str;
+   for ($i=0; isset($str[$i]) ; $i++) {                // La premiere boucle pour lire la vaiable $str.
       // echo "$i a\n";
-      for ($j=0; $j < 26 ; $j++) {                 // La deuxieme boucle pour lire le tableux alphabet.
+      for ($j=0; isset($alphab[$j]) ; $j++) {                 // La deuxieme boucle pour lire le tableux alphabet.
          // echo "$j b\n";
          if ($str[$i] == $alphab[$j]){             // trouver l'emplacement de la lettre dans le tableux de l'alphabet.
-            $str [$i] = $alphab[($j+$decalage)];   // remplager la lettre par la nouvelle lettre du tableux alphabet + le decalage recupérer de la variable $decalage. 
+            $var [$i] = $alphab[($j+$decalage)];   // remplager la lettre par la nouvelle lettre du tableux alphabet + le decalage recupérer de la variable $decalage. 
          // echo "$str[$i] \n";
          }
       }
    }
-   return $str;
+   return $var;
 }
-// $str = 'abc';
+// $str = 'abc';                                   // Pour le test
 // $decalage = 4;
 // $x = cesar($str, $decalage);
 // var_dump($x);
@@ -54,27 +55,3 @@ function cesar($str, $decalage){
 
 
 ?>
- <!DOCTYPE html>
- <html lang="fr">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
- <?php
-    
- ?>
- <form action="GET">
-   <label for="<?php $str ?>">str</label>
-   <input type="text" name="str">
-
-   <select name="function" id="function">
-      <option value="gras">Gras</option>
-      <option value="cesar">Cesar</option>
-      <option value="plateforme">Plateforme</option>
-   </select>
- </form>
- </body>
- </html>
