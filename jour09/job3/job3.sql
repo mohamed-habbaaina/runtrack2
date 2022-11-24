@@ -1,5 +1,4 @@
--- Mohamed HABBAAINA
--- Généré le : jeu. 24 nov. 2022 à 13:06
+-- Mohamed HABBAAINA le : jeu. 24 nov. 2022
 
 -- Maintenant que vous avez créé une base de données, des tables et que vous y avez
 -- ajouté des données, vous allez pouvoir les manipuler.
