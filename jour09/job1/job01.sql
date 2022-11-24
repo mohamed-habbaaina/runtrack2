@@ -4,7 +4,7 @@
 --
 -- Hôte : localhost
 -- Généré le : jeu. 24 nov. 2022 à 11:48
--- Version du serveur : 10.4.25-MariaDB 
+-- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
