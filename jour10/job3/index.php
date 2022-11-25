@@ -38,7 +38,7 @@ $result_fetch_job3 = $requ->fetch_all();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>job 02</title>
+    <title>job 03</title>
  </head>
  <body>
     <h1>La base de données job03</h1>
