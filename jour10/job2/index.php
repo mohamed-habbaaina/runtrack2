@@ -21,9 +21,9 @@ $requ = $connection->query("SELECT `nom`, `capacite` FROM `salles`");
 
 // requete pour pour "fetch" les données
 $result_fetch_salles = $requ->fetch_all();
-echo '<pre>';
-var_dump($result_fetch_salles);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($result_fetch_salles);
+// echo '</pre>';
 ?>
  <!DOCTYPE html>
  <html lang="fr">
