@@ -37,10 +37,10 @@ $result_fetch_etudiants = $requ->fetch_all();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>job 01</title>
+    <title>job 0</title>
  </head>
  <body>
-    <h1>La base de données</h1>
+    <h1>La base de données "etudiants"</h1>
     <table>
       <thead>
          <th>id</th>
