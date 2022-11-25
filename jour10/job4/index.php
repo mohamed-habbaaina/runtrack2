@@ -21,9 +21,9 @@ $requ = $connection->query("SELECT * FROM `etudiants` WHERE prenom LIKE 'T%';");
 
 // requete pour pour "fetch" les données
 $result_fetch_job4 = $requ->fetch_all();
-echo '<pre>';
-var_dump($result_fetch_job4);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($result_fetch_job4);
+// echo '</pre>';
 
 // while($x = $requ->fetch_array() != null){
 //    var_dump($x);
